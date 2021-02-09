@@ -29,6 +29,6 @@ class ComClient:
         Returns:
             str: returns json string with the backend response
         """
-        request = requests.post(self.base_url + '/post_lecture/', {"device": device, "information": information})
+        request = requests.post(self.base_url + '/post_lecture/', json={"device": device, "information": information})
         return request.json()
 

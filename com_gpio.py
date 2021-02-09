@@ -1,8 +1,8 @@
 """Provides Raspberry Pi GPIO communication"""
 
 import time
-import Rpi.GPIO as GPIO
-from com_cli import ComClient
+import RPi.GPIO as GPIO
+from com_client import ComClient
 
 class ComGpio:
     """Provides communication with GPIO"""
